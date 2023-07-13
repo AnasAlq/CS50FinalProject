@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Protfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e2c1a516ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/nameLogo.png" alt="nameLogo">
+            <ul>
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#offers">SERVICES</a></li>
+                <li><a href="">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <img src="images/moon.png" id="icon">
+        </nav>
+        <div class="detel">
+            <h1>I'm Anas <span>Al-Qadhi</span></h1>
+            <p>This is my official portfolio website to share
+                <br>all my experiences and goals for the future!</p>
+            <a href="AnasAlqadhiCV.pdf">DOWNLOAD CV</a>
+        </div>
+        <div class="img">
+            <img src="images/personalPhoto.png" class="personal">
+        </div>
+    </div>
+<!-- ===========================about=========================-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+            <div class="about-col-1">
+                <img src="images/me.png">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I'm Anas Al-Qadhi, a multilingual teacher passionate about education. With over five years of teaching experience, I specialize in Turkish, English, and Arabic. For more than a year, I have been teaching and working as a translator
+                    in Turkey. I am committed to creating a supportive and engaging learning environment where students can thrive. </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><b><span>Teacher</span></b><br>Teaching Languages To different ages</li>
+                    <li><b><span>English Teacher</span></b><br>Teaching Enlish with joyful activities</li>
+                    <li><b><span>Interpreter </span></b><br>Translating for people between three langauges: Arabic, English, Turkish</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><b><span>Teaching English</span></b><br>Over than 5 years of teaching English</li>
+                    <li><b><span>Local Interpreter</span></b><br>Working for tourisim agencies to tour tourists</li>
+
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><b><span>TOEFIL Test</span></b><br>Scored 98 in TOEFIl test</li>
+                    <li><b><span>Undergraduate student</span></b><br>Studying Mechatronics Engineering</li>
+                    <li><b><span>CS50 student</span></b><br>Taking CS50 introductary Course in computer science</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!--============================what you get======================================-->
+    <div id="offers">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="offers-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-hands-asl-interpreting fa-2xl" style="color: #2d6871;"></i>
+                    <h2>Language Instruction:</h2>
+                    <p>1.Tailored multilingual instruction in Turkish, English, and Arabic.<br>
+                        2.Engaging teaching methods for effective language learning.
+                    </p>
+                    <a href="">Learn more</a>
+                </div>
+                
+                <div>
+                    <i class="fa-solid fa-language fa-2xl" style="color: #2d6871;"></i>
+                    <h2>Translation and Interpretation:</h2>
+                    <p>1.Accurate and culturally appropriate translations.<br>
+                        2.Professional interpretation services.
+                    </p>
+                    <a href="">Learn more</a>
+                </div>
+                
+                <div>
+                    <i class="fa-solid fa-globe fa-2xl" style="color:#2d6871"></i>
+                    <h2>Cultural Competency Training:</h2>
+                    <p>1.Workshops on intercultural communication.<br>
+                        2.Cultural sensitivity guidance.
+                    </p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+<!--================================contact=================================== -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope" style="color: rgb(215, 0, 0);"></i> anas.m.alq@gmail.com</p>
+                    <p><i class="fa-solid fa-phone" style="color: #3b3b3b;"></i>+90 531 375 46 99</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/anas.m.alq/"><i class="fa-brands fa-facebook" style="color: #3b5998;"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter" style="color: #00acee;"></i></a>
+                        <a href="https://www.linkedin.com/in/anas-m-al-qadhi-94372a248/"><i class="fa-brands fa-linkedin" style="color: #0072b1 ;"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name='Name' placeholder="Your Name" required>
+                        <input type="number" name='Phone-Number' placeholder="Your Phone number" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="adress" rows="1" placeholder="From which company?"></textarea>
+                        <textarea name="Message" rows="3" placeholder="What Do You want to write?"></textarea>
+                        <button type="submit" class="btn">SEND</button>
+                        
+                    </form>
+                    <span id="message"></span>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>copyright © Anas, Made with by Anas Al-Qadhi</p>
+        </div>
+    </div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabName) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabName).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function() {
+        document.body.classList.toggle("darkTheme");
+        if (document.body.classList.constains("darkTheme")) {
+            icon.src = "images/sun.png";
+        } else {
+            icon.src = "images/moon.png";
+        }
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzhB_sWTsYa8ZUVSA86ZnxWT11S8YTMnFFlIDNNT48zkkHAy_mt2R-Khvg4CeDCcB-t/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const message= document.getElementById("message")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response =>{
+                message.innerHTML = "Thank you for your message"
+                setTimeout(function(){
+                    message.innerHTML = ""
+                }, 5000)
+                    form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+
+</html>
